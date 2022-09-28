@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/HomeTab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/tab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="114dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="149dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#A7F4D3"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view1"
+            app:layout_constraintEnd_toEndOf="@+id/view1"
+            app:layout_constraintStart_toStartOf="@+id/view1"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HomeTab"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tourism"
+            android:text="Welcome to \nDungun Tourism 2021"
+            android:paddingLeft="15dp"
+            android:textColor="@color/white"
+            android:paddingBottom="15dp"
+            android:gravity="center_vertical"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="With this app you can..."
+            android:textAlignment="center"
+            android:textSize="24sp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tab">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/home1" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="100dp"
+                        android:layout_height="200dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Get the knowledge of the tourist attraction in Dungun" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tab">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="100dp"
+                        android:layout_height="200dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Learn more about the beautiful of these places" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/home2" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tab">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/home3" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="100dp"
+                        android:layout_height="200dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Get the location and see the attractive pictures of Dungun" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

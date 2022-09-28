@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TouristAttractionDescriptionActivity">
+
+    <RelativeLayout
+        android:id="@+id/TouristTab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/tab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="200dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:text="Description"
+            android:textColor="#A7F4D3"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view1"
+            app:layout_constraintEnd_toEndOf="@+id/view1"
+            app:layout_constraintStart_toStartOf="@+id/view1"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/name"
+        app:layout_constraintBottom_toTopOf="@+id/iv_Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TouristTab" />
+
+    <ImageView
+        android:id="@+id/iv_Image"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Name"
+        app:srcCompat="@drawable/pulau_tenggol" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="15dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:background="@drawable/tab"
+        app:layout_constraintBottom_toTopOf="@+id/icon_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Image" />
+
+    <LinearLayout
+        android:id="@+id/icon_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description">
+
+        <ImageView
+            android:id="@+id/iv_Map"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="20dp"
+            android:background="#2196F3"
+            app:srcCompat="@drawable/ic_baseline_map_24" />
+
+        <ImageView
+            android:id="@+id/iv_Picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="90dp"
+            android:layout_marginBottom="20dp"
+            android:background="#2196F3"
+            app:srcCompat="@drawable/ic_baseline_image_24" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
